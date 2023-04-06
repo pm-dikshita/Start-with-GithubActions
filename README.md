@@ -42,3 +42,10 @@ docker build -t python-hello .
 docker run python-hello
 ```
 This command will return the expected output.
+
+In order to check the docker images, run:
+
+```
+docker images
+```
+<img src="https://github.com/pm-dikshita/Start-with-GithubActions/blob/main/images/docker-images.png">
