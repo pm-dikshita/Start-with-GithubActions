@@ -32,9 +32,9 @@ Once the Dockerfile is created, now we need to build the docker image:
 docker build -t python-hello .
 ```
 
-This command will build the image python-hello using Dockerfile from the same directory with a tagging the image using "-t". 
+- This command will build the image python-hello using Dockerfile from the same directory with a tagging the image using "-t". 
 
-***.*** refers to the Dockerfile location as the docker build context.
+- ***"."*** refers to the Dockerfile location as the docker build context.
 
 2. Run the created image with the command:
 
