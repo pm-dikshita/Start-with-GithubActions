@@ -41,4 +41,4 @@ docker build -t python-hello .
 ```
 docker run python-hello
 ```
-THis command will return the expected output.
+This command will return the expected output.
