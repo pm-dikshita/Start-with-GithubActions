@@ -9,7 +9,7 @@ This repo focuses on dockerizing a <a href="https://github.com/pm-dikshita/Start
 
 #### - FROM python:3.8-slim-buster:
 
-It pulls official Docker python version 3.8 image based on Debian buster from Docker hub.
+It pulls base image, in our case official Docker python version 3.8 image based on Debian buster from Docker hub.
 
 #### - ADD hello.py /:
 
@@ -32,8 +32,13 @@ Once the Dockerfile is created, now we need to build the docker image:
 docker build -t python-hello .
 ```
 
+This command will build the image python-hello using Dockerfile from the same directory with a tagging the image using "-t". 
+
+***.*** refers to the Dockerfile location as the docker build context.
+
 2. Run the created image with the command:
 
 ```
 docker run python-hello
 ```
+THis command will return the expected output.
