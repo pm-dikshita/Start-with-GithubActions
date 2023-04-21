@@ -24,3 +24,8 @@ jobs:
           context: .
           push: true
           tags: pmdikshita/start-with-dockerize-manually-and-github-actions:latest
+    - name: Start Docker Compose file
+      uses: docker/compose-action@v2
+      with:
+        compose-file: docker-compose.yml
+        services: my_service
