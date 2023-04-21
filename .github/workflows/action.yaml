@@ -24,3 +24,8 @@ jobs:
           context: .
           push: true
           tags: pmdikshita/start-with-dockerize-manually-and-github-actions:latest
+    - name: Run Docker Compose for the image
+      uses: docker/compose-action@v2
+      with:
+        compose-file: docker-compose.yml
+        services: docker_svc
