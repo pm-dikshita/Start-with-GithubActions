@@ -1,0 +1,6 @@
+version: '3'
+services:
+  my_service:
+    image: pmdikshita/start-with-dockerize-manually-and-github-actions:latest
+    ports:
+      - "8000:8000"
