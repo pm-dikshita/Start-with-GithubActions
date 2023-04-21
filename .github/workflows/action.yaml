@@ -27,5 +27,5 @@ jobs:
     - name: Start Docker Compose file
       uses: docker/compose-action@v2
       with:
-        compose-file: docker-compose.yml
+        compose-file: docker-compose.yaml
         services: my_service
